@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "investec-pb-app"
+version = "0.1.0"
+description = ""
+authors = ["Tai Lucas <tglucas@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+app = "app.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+lets-plot = "^3.2.0"
+investec-api-python = {path = "investec-api-python"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

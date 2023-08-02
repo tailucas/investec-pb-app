@@ -1,0 +1,3 @@
+[submodule "investec-api-python"]
+	path = investec-api-python
+	url = git@github.com:tailucas/investec-api-python.git
