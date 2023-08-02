@@ -26,7 +26,6 @@ if __name__ == "__main__":
         use_sandbox=True,
         additional_headers={'Accept-Encoding': 'gzip, deflate, br'})
 
-
     log.info('Transferring...')
     try:
         response = client.transfer(account_id='3353431574710166878182963', beneficiary_account_id='3353431574710163189587446', amount=10, my_reference='API transfer', their_reference='API transfer')
@@ -55,5 +54,5 @@ if __name__ == "__main__":
         response = client.get_account_balance(account_id=account_id)
         pp.pprint(response)
         log.info(f'Getting account transactions for account {account_id}')
-        response = client.get_account_transactions(account_id=account_id)
+        response = client.get_account_transactions(account_id=account_id, from_date='2023-08-01', transaction_type='CardPurchases')
         pp.pprint(response)
