@@ -12,14 +12,16 @@ log.setLevel(logging.DEBUG)
 
 pp = pprint.PrettyPrinter(indent=2)
 
-from investec_api_python import SAPBAccountInformation
+
+from investec_api_python import InvestecOpenApiClient
+
 
 if __name__ == "__main__":
     config = configparser.RawConfigParser()
     config.read('creds.properties')
     creds = dict(config.items('creds'))
 
-    client = SAPBAccountInformation(
+    client = InvestecOpenApiClient(
         client_id=creds['client_id'],
         secret=creds['client_secret'],
         api_key=creds['api_key'],
@@ -56,3 +58,7 @@ if __name__ == "__main__":
         log.info(f'Getting account transactions for account {account_id}')
         response = client.get_account_transactions(account_id=account_id, from_date='2023-08-01', transaction_type='CardPurchases')
         pp.pprint(response)
+
+    log.info('Listing cards...')
+    response = client.get_cards()
+    pp.pprint(response)
