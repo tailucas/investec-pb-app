@@ -20,6 +20,7 @@ from investec_api_python import InvestecOpenApiClient
 
 
 if __name__ == "__main__":
+    card_sandbox = False
     config = configparser.RawConfigParser()
     config.read('creds.properties')
     creds = dict(config.items('creds'))
@@ -82,6 +83,7 @@ if __name__ == "__main__":
             response = client.get_account_transactions(account_id=account_id, from_date='2023-08-01', transaction_type='CardPurchases')
             pp.pprint(response)
 
-        log.info('Listing cards...')
-        response = client.get_cards()
-        pp.pprint(response)
+        if card_sandbox:
+            log.info('Listing cards...')
+            response = client.get_cards()
+            pp.pprint(response)
