@@ -10,8 +10,7 @@ app = "app.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-lets-plot = "^3.2.0"
-investec-api-python = {path = "investec-api-python"}
+investec-api-python = "^0.1.0"
 
 [build-system]
 requires = ["poetry-core"]

@@ -111,75 +111,14 @@ name = "investec-api-python"
 version = "0.1.0"
 description = "Python client for Investec Programmable Banking"
 optional = false
-python-versions = "^3.10"
-files = []
-develop = false
-
-[package.dependencies]
-requests = "^2.31.0"
-
-[package.source]
-type = "directory"
-url = "investec-api-python"
-
-[[package]]
-name = "lets-plot"
-version = "3.2.0"
-description = "An open source library for statistical plotting"
-optional = false
-python-versions = "*"
+python-versions = ">=3.10,<4.0"
 files = [
-    {file = "lets_plot-3.2.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:9b43930b771fb772f86b84a17c12008d138e3c35283f0f393cad734e58b0511c"},
-    {file = "lets_plot-3.2.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:8d6dad2da5e01d43a2e5bae05237b6e64f2eb25a3b92c6a209f26c640381ce3f"},
-    {file = "lets_plot-3.2.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4f35baaac34e9224ab61ce04cf8ba201b5fdee849dc4b09bc88efbf958dd6c82"},
-    {file = "lets_plot-3.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:97102fd7d240288ed020514d932838a24677cdac621027bd726e19c617fb57ea"},
-    {file = "lets_plot-3.2.0-cp310-cp310-win_amd64.whl", hash = "sha256:cfb2365eae40b5485a42749e59f58ed1bb4e609088cb4227117c128736c80b74"},
-    {file = "lets_plot-3.2.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:ac4ca344cb5acac06bba69eea1394284241619bb21f9e5da824ee03c96f74b89"},
-    {file = "lets_plot-3.2.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:8e727c415d6623c354df59026d7e7719b4ef19ac05d872060134deb557aada67"},
-    {file = "lets_plot-3.2.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9502f795bf5135a248be63f329ef4df69fd45c95200a2ff342b8ecb991ea0f17"},
-    {file = "lets_plot-3.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:331181914f5e43d5128d32036ddbb981928e77b5e2afe803515160d9825ea9e2"},
-    {file = "lets_plot-3.2.0-cp311-cp311-win_amd64.whl", hash = "sha256:45ad337cf903ae75d2e97064309a222a7033029479cadd2b3d7b16eaa536f739"},
-    {file = "lets_plot-3.2.0-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:19b337a08d0b38f3a6404bcbe302e686d4922d2a8cd0aab257bef957cb8eb94d"},
-    {file = "lets_plot-3.2.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:881c924bf3d12b54541aca77f536b49f2d219e130b3ec2a755d9339844b88ff8"},
-    {file = "lets_plot-3.2.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e97dbf89ec52d246ec2601343e704af6d3315c3dbe628e071ca2fd67c3f4e070"},
-    {file = "lets_plot-3.2.0-cp37-cp37m-win_amd64.whl", hash = "sha256:183aed11269c8b11e37a732d90c6239c08feecdd3dfdbf2e7ff14e70a951047e"},
-    {file = "lets_plot-3.2.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:c88cef60d9a27343b75ee9cd32a07b4ed53f8cfe1ee3357de7e455db5379e067"},
-    {file = "lets_plot-3.2.0-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:4dcdfc83f69c9b51248daee6c990b6018fb58966140e4a7954e5f41b414bab99"},
-    {file = "lets_plot-3.2.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:11cecb1887e7cdc1d491d8054710487205fe3f9da0a44b5f2d6033fffeab6d99"},
-    {file = "lets_plot-3.2.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4e04cd25597ef8ae5c67968c11e2412ad0f5f76c52169a82fc647e4546b3b128"},
-    {file = "lets_plot-3.2.0-cp38-cp38-win_amd64.whl", hash = "sha256:7a4d0331c8457d07dadebb759cfd440a7e4831eb7f9c2f3e4fa592234bf16b05"},
-    {file = "lets_plot-3.2.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:9b77f1cba6a2929b33463e59759ee8166e7b4c923c221bde3c2ce3865d7d4c5a"},
-    {file = "lets_plot-3.2.0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:ea7f6f47a455e424a513b68201f93fefcdfe13c87889d71aab29cf77081aa125"},
-    {file = "lets_plot-3.2.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:1928aa0d79f2cccfb8ae734686b8f9f2acd109c4d7bf282f1ac14f83ee759fe5"},
-    {file = "lets_plot-3.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:88ab1b013a3954a53935953b81916fea66417a313e6f1fe638b73cd14d2d0b9e"},
-    {file = "lets_plot-3.2.0-cp39-cp39-win_amd64.whl", hash = "sha256:a5fc4b51a70010a6820c3781ab155f6d49a661ee602e40d8e1e619f3d020bc62"},
+    {file = "investec_api_python-0.1.0-py3-none-any.whl", hash = "sha256:9b15285c0d27d41bbe0fd01abfa209ef5f5ef4853970a8250d3733c939ea62b8"},
+    {file = "investec_api_python-0.1.0.tar.gz", hash = "sha256:d5fe9dc865a004ffa7f1edd944e9ccf8dec6accc2759316c1e663b4c3aa0c4f5"},
 ]
 
 [package.dependencies]
-palettable = "*"
-pypng = "*"
-
-[[package]]
-name = "palettable"
-version = "3.3.3"
-description = "Color palettes for Python"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "palettable-3.3.3-py2.py3-none-any.whl", hash = "sha256:74e9e7d7fe5a9be065e02397558ed1777b2df0b793a6f4ce1a5ee74f74fb0caa"},
-    {file = "palettable-3.3.3.tar.gz", hash = "sha256:094dd7d9a5fc1cca4854773e5c1fc6a315b33bd5b3a8f47064928facaf0490a8"},
-]
-
-[[package]]
-name = "pypng"
-version = "0.20220715.0"
-description = "Pure Python library for saving and loading PNG images"
-optional = false
-python-versions = "*"
-files = [
-    {file = "pypng-0.20220715.0-py3-none-any.whl", hash = "sha256:4a43e969b8f5aaafb2a415536c1a8ec7e341cd6a3f957fd5b5f32a4cfeed902c"},
-    {file = "pypng-0.20220715.0.tar.gz", hash = "sha256:739c433ba96f078315de54c0db975aee537cbc3e1d0ae4ed9aab0ca1e427e2c1"},
-]
+requests = ">=2.31.0,<3.0.0"
 
 [[package]]
 name = "requests"
@@ -222,4 +161,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "ddc20c1e90aca89bd5476704f709281f481f249589cefc01e51144034b7a2316"
+content-hash = "2f9322e4c399a74f0c8757e4d571992d7a10673e9c34eb5a28bbcdaef95c3617"

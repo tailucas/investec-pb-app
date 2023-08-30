@@ -10,13 +10,7 @@ A simple sample application for the [Python client for Investec Programmable Ban
 <!-- SETUP -->
 ## Setup
 
-1. Verify that the git submodule is present which contains the client library and module. In the project directory, run these commands.
-```sh
-git submodule init
-git submodule update
-```
-
-2. Install [Poetry][python-poetry-url] for dependency and runtime management, which already references the submodule in the `pyproject.toml` configuration. Follow the instructions on the Poetry site [here][python-poetry-install-url].
+Install [Poetry][python-poetry-url] for dependency and runtime management, which already references the client library in the `pyproject.toml` configuration. Follow the instructions on the Poetry site [here][python-poetry-install-url].
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
