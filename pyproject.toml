@@ -10,7 +10,7 @@ app = "app.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-investec-api-python = "^0.1.0"
+investec-api-python = "^0.0.1"
 
 [build-system]
 requires = ["poetry-core"]
